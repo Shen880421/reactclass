@@ -76,7 +76,7 @@ const PostPage = () => {
               <a href="#!">
                 <img
                   className="img-fluid"
-                  src="assets/img/post-sample-image.jpg"
+                  src="/img/post-sample-image.jpg"
                   alt="..."
                 />
               </a>
