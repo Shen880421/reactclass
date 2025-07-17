@@ -3,10 +3,10 @@ const PostPage = () => {
   return (
     <>
       <Hero title="Post Me" img="post-bg" />
-      <article class="mb-4">
-        <div class="container px-4 px-lg-5">
-          <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
+      <article className="mb-4">
+        <div className="container px-4 px-lg-5">
+          <div className="row gx-4 gx-lg-5 justify-content-center">
+            <div className="col-md-10 col-lg-8 col-xl-7">
               <p>
                 Never in all their history have men been able truly to conceive
                 of the world as one: a single sphere, a globe, having the
@@ -39,7 +39,7 @@ const PostPage = () => {
                 share in our world are far more valuable than those which divide
                 us.
               </p>
-              <h2 class="section-heading">The Final Frontier</h2>
+              <h2 className="section-heading">The Final Frontier</h2>
               <p>
                 There can be no thought of finishing for ‘aiming for the stars.’
                 Both figuratively and literally, it is a task to occupy the
@@ -52,7 +52,7 @@ const PostPage = () => {
                 generations. And no matter how much progress one makes, there is
                 always the thrill of just beginning.
               </p>
-              <blockquote class="blockquote">
+              <blockquote className="blockquote">
                 The dreams of yesterday are the hopes of today and the reality
                 of tomorrow. Science has not yet mastered prophecy. We predict
                 too much for the next year and yet far too little for the next
@@ -64,7 +64,7 @@ const PostPage = () => {
                 mankind is carrying out in accordance with the natural laws of
                 human development.
               </p>
-              <h2 class="section-heading">Reaching for the Stars</h2>
+              <h2 className="section-heading">Reaching for the Stars</h2>
               <p>
                 As we got further and further away, it [the Earth] diminished in
                 size. Finally it shrank to the size of a marble, the most
@@ -75,12 +75,12 @@ const PostPage = () => {
               </p>
               <a href="#!">
                 <img
-                  class="img-fluid"
+                  className="img-fluid"
                   src="assets/img/post-sample-image.jpg"
                   alt="..."
                 />
               </a>
-              <span class="caption text-muted">
+              <span className="caption text-muted">
                 To go places and do things that have never been done before –
                 that’s what living is all about.
               </span>
