@@ -20,31 +20,25 @@ export const authOptions = {
   callbacks: {
     // 使用者成功登入時呼叫
     async signIn({ profile }) {
-      // 1. 連接資料庫
-      await connectDB();
-      // 2. 檢查使用者是否已存在
-      const userExists = await User.findOne({ email: profile.email });
-      // 3. 若不存在則建立新使用者
-      if (!userExists) {
-        // 若名稱過長則截斷
-        const username = profile.name.slice(0, 20);
-        await User.create({
-          email: profile.email,
-          username: username,
-          image: profile.picture,
-        });
+      try {
+        console.log("User trying to sign in:", profile.email);
+        // 暫時移除資料庫操作，直接允許登入
+        return true;
+      } catch (error) {
+        console.log("SignIn error:", error);
+        return false;
       }
-      // 4. 回傳 true 允許登入
-      return true;
     },
     // 修改 session 物件的 callback 函式
     async session({ session }) {
-      // 1. 從資料庫取得使用者
-      const user = await User.findOne({ email: session.user.email });
-      // 2. 將使用者 id 指派到 session
-      session.user.id = user._id.toString();
-      // 3. 回傳 session
-      return session;
+      try {
+        console.log("Session callback:", session.user.email);
+        // 暫時移除資料庫操作
+        return session;
+      } catch (error) {
+        console.log("Session error:", error);
+        return session;
+      }
     },
   },
 };
