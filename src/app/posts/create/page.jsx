@@ -105,8 +105,8 @@ const CreatePostPage = () => {
         setMessage("文章新增成功！即將跳轉到文章頁面...");
         // 成功後重新導向到新建立的文章
         setTimeout(() => {
-          router.push(`/posts/${data.post.id}`);
-        }, 2000);
+          router.push(`/posts`);
+        }, 1000);
       } else {
         setMessage(data.error || "新增文章失敗，請稍後再試");
       }

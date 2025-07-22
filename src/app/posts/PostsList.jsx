@@ -81,8 +81,12 @@ export default function PostsList() {
               </a>
               <p className="post-meta">
                 Posted by
-                <a href="#!">{post.author}</a>
-                on {post.createdAt}
+                <a href="#!">
+                  {post.author?.username ||
+                    post.author?.email ||
+                    "Unknown Author"}
+                </a>
+                on {new Date(post.createdAt).toLocaleDateString()}
               </p>
             </div>
             {idx < posts.length - 1 && <hr className="my-4" />}
