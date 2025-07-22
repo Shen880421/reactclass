@@ -1,5 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 .env*
+client_secret_329434897039-4hrf3eo5a4gp471a8q2ev4l8gsgadeq4.apps.googleusercontent.com.JSON
 # dependencies
 /node_modules
 /.pnp
